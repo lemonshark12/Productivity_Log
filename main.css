@@ -1,0 +1,16 @@
+body {
+	background: :blue;
+}
+
+h1 {
+	color: blue;
+}
+
+h2 {
+	color: maroon;
+	text-decoration: underline
+}
+
+h2:hover {
+	background-color: gold;
+}
