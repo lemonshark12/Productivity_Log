@@ -5,23 +5,39 @@
 	
 	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src=scripts.js></script>
-	<link href="main.css", rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<h1> Productivity Log</h1>
-	
-	<div id=most-important>
-		<h2>Focus of the Day</h2>
+	<h1>Productivity Log</h1>
+		<hr>
+		<hr class=hr2>
+			<div class=quote-box>
+				<div id=quote-holder>
+					<p>
+						<i class="fa fa-quote-left fa-1x fa-pull-left"></i>
+							<span>Kick the Darkness 'till it Bleeds Daylight</span>
+						<i class="fa fa-quote-right fa-1x fa-pull-right"></i>
+					</p>
+				</div>
+			</div>
+	<div id="form-encapsulation">
+		<form>
+			<div id="focus">
+				<h2>Focus of the Day</h2>
+				<input id="most-important" type="text" placeholder="The most important task of the day is...">
+					<p>If this was the only thing accomplished today, you'd be satisfied</p>
+			</div>
+			
+			<div id="second-focus">
+				<input id="second-most-important" type="text" placeholder="balls!">
+					<p>balls does here</p>
+			</div>
+		
+			<button type="submit"> Let's Do This! </button>
+		</form>
 	</div>
-	
-	<input class=input_button type=text>
-	<button type="submit"> Done </button>
-	
-	<p> penis </p>
-	
-	
-	
 	<div id="clickme">
   Click here
 </div>
