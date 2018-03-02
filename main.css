@@ -1,16 +1,94 @@
+/*div {border: red dashed 1px;}*/
+
+
+html {
+	background-color: rgba(199, 211, 204, 0.5);
+}
+
 body {
-	background: :blue;
+	background-color: white;
+	border-radius: 25px;
+	padding: 10px;
+	margin: 1% 8%;
 }
 
 h1 {
-	color: blue;
+	text-align: center;
+	font-family: Bradley Hand, serif;
+/*	font-style: italic;*/
+	font-size: 48px;
+	margin: auto;
+	padding: 15px;
+	color: #303030;
 }
 
 h2 {
+	font-family: Arial, serif;
+	font-size:x-large;
 	color: maroon;
-	text-decoration: underline
+	text-decoration: underline;
+	clear: left;
 }
 
-h2:hover {
-	background-color: gold;
+.hr2 {
+	width: 98%;
+}
+
+.quote-box {
+/*	border: #c8c8c8 2px solid;*/
+	width: auto;
+	align-content: center;
+	display: block;
+	padding: 5px;
+}
+
+#quote-holder {
+	display: inherit;
+	min-width: 250px;
+	max-width: 40%;
+	border: rgb(145, 145, 145) 2px solid;
+	border: rgba(145, 145, 145, 0.4) 1px solid;
+	box-shadow: 8px 5px 12px gray;
+	border-radius: 25px;
+	width: 40%;
+	margin: auto;
+	padding: 15px;
+	transition: ease-in 3.5s;
+}
+
+	#quote-holder:hover {
+		background-color: #f3f3f3;
+	}
+	
+	#quote-holder:hover > p > span {
+		transition: ease 4.5s;
+		color: #e00000;
+	}
+
+#quote-holder>p {
+		text-align: center;
+		font-family: fantasy;
+		font-size: 20px;
+}
+
+#form-encapsulation {
+	display: block;
+}
+
+form {
+	background-color: rgba(255, 255, 0, 0.16);
+	margin: 15px 40px;
+	border-radius: 15px;
+	padding: 4px 25px;
+	height: 800px;
+}
+
+#most-important {
+	font-size: 18px;
+	min-width: 550px;
+	font-family: arial;
+}
+
+button[type='submit'] {
+	font-size: 24px;
 }
