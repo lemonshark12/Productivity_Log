@@ -12,6 +12,41 @@ $(function(){
 		$("h1").css("background-color", "red");
 		});
 	
+	$( "h1" ).click(function(){
+	
+	$.get( "quotes.txt" , function(filetext){
+		var quotes = filetext.split("----------");	
+			
+				//save(quotes[i])
+				$( "#quote-holder > p > span").click(function(){
+			//		for(var i = 0; i < quotes.length; i++) {
+						this.append(quotes[i]);
+						i++;
+					});
+	//		alert(quotes[2]);
+			});
+		
+		});
+		
+		
+//		$( "h1" ).click(function(){	
+//			alert(quotes[i]);
+			//i++
+			
+//			});
+			
+//		});	
+// /portfolio/Productivity_Log/
+		/*}).fail( "quotes.txt" , function(quote){
+			
+			$ ( "h1" ).click(function(){
+				
+				alert(quote);
+				
+				});
+			
+			});*/
+	
 	$( "#quote-holder" ).click(function(){
 		$( "#quote-holder > p > span" ).fadeOut( 5000, function(){
 			$( this ).fadeIn ( 5000 ) .text( "balls!");	
@@ -20,7 +55,7 @@ $(function(){
 	
 	$( "#most-important" ).click(function(){
 		
-	})
+	});
 });
 
 
