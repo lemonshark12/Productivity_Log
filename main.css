@@ -30,6 +30,10 @@ h2 {
 	clear: left;
 }
 
+#focus, #second-focus > p {
+	font-family: monospace;
+	color: gray;
+}
 .hr2 {
 	width: 98%;
 }
@@ -85,7 +89,8 @@ form {
 
 #most-important {
 	font-size: 18px;
-	min-width: 550px;
+	min-width: 210px;
+	width: 35%;
 	font-family: arial;
 }
 
